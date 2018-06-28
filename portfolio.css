@@ -1,0 +1,272 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	background: #d2dae2;
+}
+
+/* ************************************************************************
+NAV
+************************************************************************ */
+.about-container {
+	background: url('./images/Boulder.jpg') no-repeat center center fixed;
+	--webkit-background-size: cover;
+	--moz-background-size: cover;
+	background-size: cover;
+	height: 650px;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-list {
+	display: inline-block;
+    font-size: 0.8rem;
+    width: 10%;
+    font-weight: bold;
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.hire-me {
+	border-style: solid;
+	border-color: white;
+}
+
+/* ************************************************************************
+BIO
+************************************************************************ */
+
+h1 {
+	color: white;
+	font-size: 3 rem;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: white;
+	font-size: 1.2rem;
+	margin-top: 0;
+}
+
+.bio {
+	color: white;
+	font-size: 0.9rem;
+}
+
+#me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 10%;
+}
+
+
+.about {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.gray {
+	height: 3px;
+	background-color: #F7DE3B;
+	border: none;
+	width: 200px;
+}
+
+
+/* ************************************************************************
+APP INTRO
+************************************************************************ */
+.red {
+	border-top: 5px double #E00000;
+	width: 100%;
+	border-bottom: none;
+	border-right: none;
+	margin-top: 1.5%;
+}
+
+.blue {
+	border-top: 5px double #5d9c9e;
+	width: 100%;
+	border-bottom: none;
+	border-right: none;
+	margin-bottom: 1.5%;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: normal;
+	margin: 1.5%;
+}
+
+/* ************************************************************************
+APPS
+************************************************************************ */
+h4 {
+	text-align: center;
+	font-size: 1.8rem;
+	margin: 0;
+}
+
+.app-container {
+	display: flex;
+	margin-bottom: 4%;
+}
+
+.app-img {
+	/* display: inline-block;
+	width: 46%;
+	margin: 1%; */
+	flex: 2;
+}
+.full-width {
+	width: 100%;
+}
+
+.app-text-container {
+	/* position: relative; */
+	flex: 1;
+}
+
+.app-text {
+	/* display: inline-block;
+	width: 46%; */
+	margin-left: 2%;
+	margin-top: 0;
+}
+
+.img-container {
+	text-align: center;
+	margin: 5%;
+}
+
+.link {
+	text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 4%;
+    width: 30%;
+    color: white;
+    background: rgb(60,64,198);
+    margin: 4%;
+    text-align: center;
+}
+
+.link:hover {
+	color: rgb(60,64,198);
+	background: white;
+}
+
+.react-link {
+	display: block;
+	width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* ************************************************************************
+SKILLS
+************************************************************************ */
+
+.skills-and-tools {
+	max-width: 50%;
+	margin: 4% auto;
+}
+
+.skills-img {
+	width: 20%;
+	height: auto;
+	margin: 2%;
+}
+
+
+/* ************************************************************************
+CONTACT
+************************************************************************ */
+.contact-me {
+	height: 350px;
+	background-color: #202020;
+	color: white;
+	padding-top: 30px;
+}
+
+.contact-info {
+	color: white;
+	font-size: 1.2rem;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.contact-link-ul {
+	list-style: none;
+	text-align: center;
+}
+
+.contact-links {
+	color: white;
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 2%;
+}
+
+.social-links {
+	display: inline;
+}
+
+.email {
+	display: block;
+}
+
+
+
+@media (max-width: 600px) {
+
+	.nav-link {
+		font-size: 0.6rem;
+	}
+	
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2, .contact-links {
+		font-size: 1rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	.bio, p, .contact-info, li {
+		font-size: 0.7rem;
+	}
+
+	.link {
+		padding: 2%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.app-img, .app-container, .app-text-container {
+		display: block;
+	}
+
+}
