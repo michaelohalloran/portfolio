@@ -2,7 +2,6 @@ body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
-	background: #d2dae2;
 }
 
 /* ************************************************************************
@@ -16,21 +15,27 @@ NAV
 	height: 650px;
 }
 
+.navbar {
+	display: flex;
+	list-style: none;
+}
+
 .nav-link {
 	color: white;
 	text-decoration: none;
 }
 
 .nav-list {
-	display: inline-block;
+	flex: 1;
+	/* display: inline-block; */
     font-size: 0.8rem;
-    width: 10%;
+    /* width: 10%; */
     font-weight: bold;
     margin-top: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: center;
-    margin-left: 3%;
+    margin-left: 1.5%;
 }
 
 .hire-me {
@@ -87,8 +92,8 @@ h2 {
 /* ************************************************************************
 APP INTRO
 ************************************************************************ */
-.red {
-	border-top: 5px double #E00000;
+.border {
+	/* border-top: 5px double #E00000; */
 	width: 100%;
 	border-bottom: none;
 	border-right: none;
@@ -234,10 +239,23 @@ CONTACT
 
 @media (max-width: 600px) {
 
+	.navbar {
+		flex-wrap: wrap;
+	}
+
+	.nav-list {
+		flex-basis: 50%;
+		max-width: 46%;
+	}
+
 	.nav-link {
 		font-size: 0.6rem;
 	}
 	
+	.about {
+		width: auto;
+	}
+
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -269,4 +287,11 @@ CONTACT
 		display: block;
 	}
 
+}
+
+@media (max-width: 400px) {
+	.nav-list {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
 }
