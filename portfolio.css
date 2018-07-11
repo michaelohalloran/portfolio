@@ -8,11 +8,15 @@ body {
 NAV
 ************************************************************************ */
 .about-container {
-	background: url('./images/Boulder.jpg') no-repeat center center fixed;
+	background: url('./images/sun.jpg') no-repeat center center fixed;
 	--webkit-background-size: cover;
 	--moz-background-size: cover;
 	background-size: cover;
 	height: 650px;
+}
+
+.about-text {
+	background: rgba(52,73,94, 0.7);
 }
 
 .navbar {
@@ -23,6 +27,14 @@ NAV
 .nav-link {
 	color: white;
 	text-decoration: none;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.other-nav {
+	background: rgba(52,73,94, 0.7);
 }
 
 .nav-list {
@@ -44,6 +56,7 @@ NAV
 	background: rgba(192, 57, 43, 0.7);
     margin-right: 1%;
 }
+
 
 /* ************************************************************************
 BIO
@@ -192,7 +205,7 @@ SKILLS
 }
 
 .skills-img {
-	width: 20%;
+	width: 40%;
 	height: auto;
 	margin: 2%;
 }
@@ -210,6 +223,7 @@ CONTACT
 
 .contact-info {
 	color: white;
+	text-align: center;
 	font-size: 1.2rem;
     margin-top: 2%;
     margin-left: 2%;
