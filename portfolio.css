@@ -200,14 +200,17 @@ SKILLS
 ************************************************************************ */
 
 .skills-and-tools {
-	max-width: 50%;
+	max-width: 80%;
 	margin: 4% auto;
+	text-align: center;
 }
 
 .skills-img {
-	width: 40%;
+	width: 30%;
 	height: auto;
 	margin: 2%;
+	vertical-align: middle;
+	max-width: 260px;
 }
 
 
@@ -253,7 +256,23 @@ CONTACT
 
 
 
-@media (max-width: 600px) {
+/* ************************************************************************** */
+/* MEDIA QUERIES */
+/* ************************************************************************** */
+@media (min-width: 631px) and (max-width: 912px) {
+	li, p {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.skills-img {
+		width: 30%;
+	}
+}
+
+
+@media (max-width: 630px) {
 
 	.navbar {
 		flex-wrap: wrap;
@@ -290,6 +309,7 @@ CONTACT
 
 	.bio, p, .contact-info, li {
 		font-size: 0.7rem;
+		margin: 4%;
 	}
 
 	.link {
